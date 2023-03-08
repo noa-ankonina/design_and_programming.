@@ -1,20 +1,32 @@
 public class Bear extends Animal {
     Bear(int weight, Season season) {
+
         // TODO: Implement.
+
+
 
         super(weight,season, Color.BROWN);
     }
 
     @Override
     public String toString() {
-        ////
+        Season season = getCurrentSeason();
+        if (season == Season.WINTER){
+            return "Bear{" + "I am sleeping" +
+                    " My weight is:" + weight +
+                    "and my color is:" + color +
+                    '}';
+        }else{
             return "Bear{" +
-                " My weight is:" + weight +
-                "and my color is:" + color +
-                '}';
+                    " My weight is:" + weight +
+                    "and my color is:" + color +
+                    '}';
+        }
+
+
+
     }
 
-    @Override
     public void influenceSeason() {
         Season season = getCurrentSeason();
         if (season == Season.WINTER) {
@@ -35,6 +47,7 @@ public class Bear extends Animal {
         // TODO: Implement.
 
         this.changeSeason();
+        this.influenceSeason();
 
     }
 }

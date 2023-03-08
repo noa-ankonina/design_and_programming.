@@ -18,9 +18,7 @@ public abstract class Animal implements Seasonable,Comparable{
 
     }
 
-public void influenceSeason(){
 
-    }
     @Override
     public Season getCurrentSeason() {
         return season;

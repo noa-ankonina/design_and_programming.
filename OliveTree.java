@@ -8,16 +8,26 @@ public class OliveTree extends Tree {
 
     @Override
     public String toString() {
-        return "OliveTree{" +
-                "height=" + height +
-                ", season=" + season +
-                ", leavesColor=" + leavesColor +
-                '}';
+        if(season == Season.FALL){
+            //Olive tree. I give fruit. My height is: 224 and my color is: GREEN
+            return "Olive tree.{" + "I give fruit."+
+                    "My height is:" + height +
+                    "and my color is:" + leavesColor +
+                    '}';
+        }else {
+            //Olive tree. My height is: 193 and my color is: GREEN
+            return "Olive tree.{" +
+                    "My height is:" + height +
+                    "and my color is:" + leavesColor +
+                    '}';
+        }
     }
 
     @Override
     public void changeSeason() {
+
         this.changeSeason();
+        this.influenceSeason();
     }
 
     @Override

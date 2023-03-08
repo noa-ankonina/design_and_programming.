@@ -8,17 +8,34 @@ public class FigTree extends Tree {
 
     @Override
     public String toString() {
-        return "FigTree{" +
-                "height=" + height +
-                ", season=" + season +
-                ", leavesColor=" + leavesColor +
-                '}';
+        if (season == Season.WINTER) {
+            return "Fig tree.{" +
+                    "My height is:" + height +
+                    "and I have no leaves"+
+                    '}';
+        }
+        //Fig tree. My height is: 304 and I have no leaves
+        //Fig tree. My height is: 266 and my color is: YELLOW
+        //Fig tree. I give fruit. My height is: 264 and my color is: GREEN
+        if (season == Season.SUMMER) {
+            return "Fig tree.{" +"I give fruit."+
+                    "My height is:" + height +
+                    "and my color is:" + leavesColor +
+                    '}';
+
+        } else {
+            return "Fig tree.{" +
+                    "My height is:" + height +
+                    "and my color is:" + leavesColor +
+                    '}';
+        }
     }
 
     @Override
     public void changeSeason() {
         // TODO: Implement.
         this.changeSeason();
+        this.influenceSeason();
     }
 
     @Override
