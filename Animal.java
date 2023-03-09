@@ -64,6 +64,6 @@ public abstract class Animal implements Seasonable,Comparable{
         return "Animal" +
                 "weight=" + weight +
                 ", season=" + season +
-                ", color=" + color+ '\n' ;
+                ", color=" + color;
     }
 }
