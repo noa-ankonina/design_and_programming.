@@ -10,12 +10,12 @@ public class Bear extends Animal {
         Season season = getCurrentSeason();
         if (season == Season.WINTER){
             return "Bear " + "I am sleeping" +
-                    " My weight is:" + weight +
-                    " and my color is:" + color+ '\n';
+                    " My weight is: " + weight +
+                    " and my color is: " + color+ '\n';
         }else{
             return "Bear" +
-                    " My weight is:" + weight +
-                    " and my color is:" + color+ '\n';
+                    " My weight is: " + weight +
+                    " and my color is: " + color+ '\n';
         }
     }
 
