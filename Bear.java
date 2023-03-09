@@ -25,7 +25,7 @@ public class Bear extends Animal {
             this.weight = (int) (this.weight - (this.weight * 0.2));
         }
         if (season == Season.SPRING)
-            this.weight= this.weight-(this.weight*(25/100));
+            this.weight= (int) (this.weight-(this.weight*0.25));
         if (season == Season.SUMMER)
             this.weight= (int) (this.weight+(this.weight*0.25));
         if (season == Season.FALL)
