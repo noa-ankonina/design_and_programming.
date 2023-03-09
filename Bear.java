@@ -9,13 +9,13 @@ public class Bear extends Animal {
     public String toString() {
         Season season = getCurrentSeason();
         if (season == Season.WINTER){
-            return "Bear " + "I am sleeping" +
+            return "Bear. " + "I am sleeping." +
                     " My weight is: " + weight +
-                    " and my color is: " + color+ '\n';
+                    " and my color is: " + color;
         }else{
-            return "Bear" +
+            return "Bear." +
                     " My weight is: " + weight +
-                    " and my color is: " + color+ '\n';
+                    " and my color is: " + color;
         }
     }
 

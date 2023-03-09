@@ -7,22 +7,23 @@ public class Caribou extends Animal {
 
     @Override
     public String toString() {
+
         //Caribou: My weight is: 208 and my color is: BROWN
         Season season = this.getCurrentSeason();
         if (season == Season.WINTER){
             return "Caribou: " +"I am migrating south."+
                     "My weight is: " + weight +
-                    " and my color is: " + color+ '\n';
+                    " and my color is: " + color;
         }
         if (season == Season.SUMMER){
             return "Caribou: " +"I am migrating north."+
                     "My weight is: " + weight +
-                    " and my color is: " + color+ '\n';
+                    " and my color is: " + color;
         } else {
 
-        return "Caribou " +
+        return "Caribou: " +
                 "My weight is: " + weight +
-                " and my color is: " + color+ '\n';
+                " and my color is: " + color;
     }
     }
 

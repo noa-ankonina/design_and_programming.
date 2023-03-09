@@ -10,19 +10,19 @@ public class FigTree extends Tree {
     public String toString() {
         if (season == Season.WINTER) {
             return "Fig tree. " +
-                    " My height is: " + height +
-                    " and I have no leaves"+ '\n';
+                    "My height is: " + height +
+                    " and I have no leaves";
         }
 
         if (season == Season.SUMMER) {
             return "Fig tree. " +"I give fruit."+
                     " My height is: " + height +
-                    " and my color is: " + leavesColor+ '\n';
+                    " and my color is: " + leavesColor;
 
         } else {
             return "Fig tree. " +
-                    " My height is: " + height +
-                    " and my color is: " + leavesColor+ '\n';
+                    "My height is: " + height +
+                    " and my color is: " + leavesColor;
         }
     }
 

@@ -12,12 +12,12 @@ public class OliveTree extends Tree {
             //Olive tree. I give fruit. My height is: 224 and my color is: GREEN
             return "Olive tree. " + "I give fruit."+
                     " My height is: " + height +
-                    " and my color is: " + leavesColor+ '\n';
+                    " and my color is: " + leavesColor;
         }else {
             //Olive tree. My height is: 193 and my color is: GREEN
             return "Olive tree." +
                     " My height is: " + height +
-                    " and my color is: " + leavesColor + '\n';
+                    " and my color is: " + leavesColor;
         }
     }
 
