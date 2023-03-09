@@ -2,9 +2,6 @@ public class Bear extends Animal {
     Bear(int weight, Season season) {
 
         // TODO: Implement.
-
-
-
         super(weight,season, Color.BROWN);
     }
 
@@ -12,42 +9,34 @@ public class Bear extends Animal {
     public String toString() {
         Season season = getCurrentSeason();
         if (season == Season.WINTER){
-            return "Bear{" + "I am sleeping" +
+            return "Bear " + "I am sleeping" +
                     " My weight is:" + weight +
-                    "and my color is:" + color +
-                    '}';
+                    " and my color is:" + color+ '\n';
         }else{
-            return "Bear{" +
+            return "Bear" +
                     " My weight is:" + weight +
-                    "and my color is:" + color +
-                    '}';
+                    " and my color is:" + color+ '\n';
         }
-
-
-
     }
 
     public void influenceSeason() {
         Season season = getCurrentSeason();
         if (season == Season.WINTER) {
-            this.weight = this.weight - (this.weight * (20 / 100));
-
+            this.weight = (int) (this.weight - (this.weight * 0.2));
         }
         if (season == Season.SPRING)
-            this.weight= this.weight-(this.weight*(25/100));
+            this.weight= (int) (this.weight-(this.weight*0.25));
         if (season == Season.SUMMER)
-            this.weight= this.weight+(this.weight*(1/3));
+            this.weight= (int) (this.weight+(this.weight*0.25));
         if (season == Season.FALL)
-            this.weight= this.weight+(this.weight*(25/100));
+            this.weight= (int) (this.weight+(this.weight*0.25));
 
     }
 
     @Override
     public void changeSeason() {
         // TODO: Implement.
-
-        this.changeSeason();
+        super.changeSeason();
         this.influenceSeason();
-
     }
 }
