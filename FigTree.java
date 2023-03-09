@@ -3,38 +3,33 @@ public class FigTree extends Tree {
 
     FigTree(int height, Season season) {
         // TODO: Implement.
-        super(height,season,null);
+        super(height,season,Color.YELLOW);
     }
 
     @Override
     public String toString() {
         if (season == Season.WINTER) {
-            return "Fig tree.{" +
-                    "My height is:" + height +
-                    "and I have no leaves"+
-                    '}';
+            return "Fig tree. " +
+                    " My height is:" + height +
+                    " and I have no leaves"+ '\n';
         }
-        //Fig tree. My height is: 304 and I have no leaves
-        //Fig tree. My height is: 266 and my color is: YELLOW
-        //Fig tree. I give fruit. My height is: 264 and my color is: GREEN
+
         if (season == Season.SUMMER) {
-            return "Fig tree.{" +"I give fruit."+
-                    "My height is:" + height +
-                    "and my color is:" + leavesColor +
-                    '}';
+            return "Fig tree. " +"I give fruit."+
+                    " My height is:" + height +
+                    " and my color is:" + leavesColor+ '\n';
 
         } else {
-            return "Fig tree.{" +
-                    "My height is:" + height +
-                    "and my color is:" + leavesColor +
-                    '}';
+            return "Fig tree. " +
+                    " My height is:" + height +
+                    " and my color is:" + leavesColor+ '\n';
         }
     }
 
     @Override
     public void changeSeason() {
         // TODO: Implement.
-        this.changeSeason();
+        super.changeSeason();
         this.influenceSeason();
     }
 
@@ -43,16 +38,16 @@ public class FigTree extends Tree {
 
         Season season = getCurrentSeason();
         if (season == Season.WINTER)
-            this.height = this.height+=20;
+            this.setHeight(this.height+20);
         if (season == Season.FALL){
-            this.height = this.height+=20;
+            this.height = this.height+20;
         this.leavesColor= Color.YELLOW;}
         if (season == Season.SPRING ){
-            this.height = this.height+=30;
+            this.height = this.height+30;
             this.leavesColor= Color.GREEN;
         }
         if (season == Season.SUMMER)
-            this.height = this.height+=30;
+            this.height += 30;
 
     }
 
