@@ -4,6 +4,7 @@ public class FigTree extends Tree {
     FigTree(int height, Season season) {
         // TODO: Implement.
         super(height,season,null);
+        
     }
 
     @Override
