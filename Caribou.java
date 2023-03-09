@@ -11,7 +11,7 @@ public class Caribou extends Animal {
         //Caribou: My weight is: 208 and my color is: BROWN
         Season season = this.getCurrentSeason();
         if (season == Season.WINTER){
-            return "Caribou: " +"I am migrating south."+
+            return "Caribou: " +"I am migrating south. "+
                     "My weight is: " + weight +
                     " and my color is: " + color;
         }
